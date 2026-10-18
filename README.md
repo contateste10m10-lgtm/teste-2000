@@ -1,0 +1,148 @@
+# BlazarLab — vitrine pública (v1.3.29)
+
+O BlazarLab é uma vitrine pública de divulgação científica sobre três perspectivas complementares para analisar variabilidade de blazares: **Sample Entropy (SampEn)**, **Fisher–Shannon** e **MSE-WPE / Complexity Index (CI)**. A versão 1.3.29 melhora a rastreabilidade entre resumos e referências metodológicas, esclarece o rótulo AGN genérico nos exemplos sintéticos e refina a tipografia móvel do heatmap fonte × banda, preservando a separação entre demonstrações sintéticas e resultados observacionais.
+
+A página mantém temas claro e escuro, usando séries sintéticas demonstrativas nas oito bandas de energia. Elas não substituem dados observacionais nem os cálculos da ferramenta interna. Os resultados reportados de manuscritos são identificados separadamente das demonstrações.
+
+## Endereços de publicação
+
+- **Produção/canônico:** `https://contateste10m10-lgtm.github.io/BlazarLab_13/` — é o destino de `rel="canonical"` e `og:url`.
+- **Revisão/prévia:** `https://contateste10m10-lgtm.github.io/teste-2000/` — pode ser usada para conferir alterações antes de publicar em produção.
+
+Ao publicar uma versão, copie juntos todos os arquivos do mesmo pacote. A página de revisão não deve ser tratada como prova de que a versão de produção já foi atualizada.
+
+## Novidades V1.3.29 — rastreabilidade e legibilidade móvel
+
+- Os cartões de resumo agora apontam para referências metodológicas verificadas; nenhum link de texto integral foi inventado.
+- A seção esclarece que os resumos fornecidos pelo grupo não substituem os manuscritos completos e que esta versão não inclui URLs públicas verificadas para os três textos integrais.
+- A classe sintética antes rotulada apenas como AGN passa a ser identificada como “AGN genérico”, sem alterar a chave de classe nem os dados gerados.
+- A matriz fonte × banda reforça a legibilidade dos rótulos de fonte, classe e valores, mantendo células selecionáveis e rolagem horizontal localizada.
+- A documentação distingue o endereço de produção (BlazarLab_13) do endereço de revisão (teste-2000), preservando os metadados canônicos de produção.
+- Nenhuma fórmula, parâmetro científico ou série sintética foi alterada.
+
+## Novidades V1.3.28 — revisão editorial e acabamento móvel
+
+- Corrigida a referência bibliográfica EntropyHub e adicionada uma fonte fundamental para entropia de permutação.
+- Separados os rótulos inferiores da ilustração principal, eliminando a colisão entre legenda e identificador.
+- Na matriz fonte × banda, a unidade de energia é apresentada uma única vez; cabeçalhos e identificadores têm melhor legibilidade em celulares.
+- O link do rodapé para referências e créditos recebeu uma área de toque ampliada.
+- O histórico da V1.3.24 foi consolidado num único cabeçalho, sem excluir as correções registradas.
+- Nenhuma fórmula científica ou série sintética foi alterada.
+
+## Novidades V1.3.27 — matrizes móveis e navegação acessível
+
+- O heatmap fonte × banda usa uma tabela HTML responsiva em telas estreitas, com células selecionáveis, nomes de fonte fixos na borda da matriz e navegação pelo teclado.
+- A versão SVG do heatmap permanece disponível em desktop; a representação móvel preserva os valores e sincroniza a fonte e a banda com os demais gráficos.
+- As células da sensibilidade m × r receberam alvos verticais ampliados e rolagem localizada quando necessária, sem aumentar a largura da página.
+- Adicionado teste de regressão dedicado às 192 combinações fonte × banda e ao comportamento móvel.
+- Nenhuma fórmula científica ou série sintética foi alterada.
+
+## Novidades V1.3.25 — consistência científica, fontes e CI
+
+- Corrigida a referência residual a 240 pontos: as curvas sintéticas selecionadas e a galeria usam 144 pontos por banda.
+- Adicionadas URL canônica, `og:url` e imagem de compartilhamento PNG com endereços absolutos.
+- Os cartões mantêm os resumos dos manuscritos sem inventar DOI ou URL integral; atalhos bibliográficos não verificados não fazem parte da vitrine pública.
+- Reforçada a separação visual entre dados sintéticos Swift/BAT-like e estatísticas reportadas de rádio OVRO a 15 GHz.
+- Estimativas WPE inválidas deixam de ser silenciosamente convertidas em zero; o CI só é informado quando as oito escalas são válidas.
+- O workflow de qualidade executa também os testes de geometria responsiva, zoom móvel, paleta/sons e fundos/tema.
+
+## Novidades V1.3.24 — leitura das matrizes e acessibilidade móvel
+
+- Gráficos SVG passam a acompanhar a largura real do cartão, melhorando a legibilidade em celulares, tablets e painéis de meia largura.
+- Matrizes extensas mantêm rolagem localizada; as células selecionáveis continuam disponíveis e com alvos de toque ampliados.
+- Corrigido o cabeçalho em larguras intermediárias de tablet.
+- Controles por toque reforçados e geometria redesenhada após mudanças significativas de largura, preservando o zoom.
+- Temas, simulações didáticas, tabelas sob demanda e exportação PNG permanecem disponíveis. Nenhuma fórmula ou parâmetro científico foi alterado.
+## Principais recursos preservados
+
+- Três métodos complementares e oito bandas de energia com séries demonstrativas identificadas como sintéticas.
+- Alternância de tema claro/escuro e exportação PNG que acompanha a paleta ativa.
+- Tabelas acessíveis sob demanda e cálculos populacionais em lotes após a primeira visualização.
+- Gráficos interativos, zoom, tela cheia e matriz de sensibilidade `m × r`.
+- Site público separado da ferramenta interna de cálculos.
+
+## Novidades V1.3.18
+- Nova trilha didática: o que é um blazar, por que sua variabilidade importa e que tipos de informação podemos extrair das curvas de luz.
+- Animações específicas para SampEn (bandas A e B e relação A/B), Fisher–Shannon (distribuição e gradiente) e MSE-WPE/CI (agregação em escalas). Clicar no corpo de um cartão também inicia sua simulação.
+- Corrigida a visualização compacta do mapa de sensibilidade m × r: as dez tolerâncias agora cabem na largura móvel, sem deixar metade do gráfico escondida na rolagem horizontal.
+- Animações com respeito à preferência de redução de movimento e descrições acessíveis.
+
+
+- Três métodos com identificação tipográfica explícita e animações curtas acionadas por clique/toque tanto nos ícones quanto nos diagramas ilustrativos; foco de teclado e preferência por movimento reduzido respeitados.
+- Cartões dos três manuscritos distribuídos como triângulo invertido em telas amplas, com adaptação para coluna única em telas estreitas.
+- Links do menu indicam a seção ativa, e o botão móvel mantém as três barras empilhadas e se transforma em “X” quando aberto.
+- Geometria dos gráficos baseada na largura do contêiner via `ResizeObserver`, com layout específico para a lente SampEn, rótulos curtos por banda e maior margem para o mapa m × r.
+- Melhorado o contraste do rodapé, ampliadas áreas de toque e corrigido o espaçamento do título principal em telas estreitas.
+
+- Corrigida a exportação de gráficos PNG para usar a paleta do tema ativo: fundo, grades, rótulos, eixos, tooltips e contornos.
+- Cores explícitas de séries já renderizadas são adaptadas no arquivo exportado ao tema claro, sem alterar as cores de gradientes que codificam valores em heatmaps.
+- Mantidas as melhorias de acessibilidade, responsividade, temas, sincronização multibanda e cálculos demonstrativos. Nenhuma fórmula científica foi alterada.
+
+- Melhorada a navegação móvel: cabeçalho em grelha, seletor de tema e menu dimensionados para toque, e menu limitado à altura disponível.
+- Botão do menu anuncia corretamente “Abrir navegação” / “Fechar navegação”, pode ser fechado por Escape e fecha após navegação ou clique fora.
+- Reforçado o foco de teclado nos links, controles, seletores, tabelas e ferramentas de gráfico.
+- Tabelas de dados geradas para gráficos agora incluem título/caption semântico, cabeçalhos de linha e região rolável acessível pelo teclado.
+- Gráficos com controles SVG internos são identificados como grupos acessíveis, mantendo descrições e instruções.
+- Implementada navegação por setas com foco móvel em heatmaps interativos (fonte × banda, banda × escala e sensibilidade multibanda).
+- Corrigido o conflito em que as setas do zoom do SVG podiam interceptar a navegação por teclado dos elementos gráficos internos.
+- A preferência de movimento reduzido é atualizada se a configuração do sistema mudar durante a sessão.
+- Melhorada a legibilidade em telas estreitas, com títulos fluídos, textos auxiliares maiores e preservação da rolagem horizontal localizada para matrizes extensas.
+- Preservados temas, métodos, fórmulas, parâmetros, dados demonstrativos, tabelas científicas, zoom, tela cheia e exportação PNG.
+
+## Novidades V1.3.19 — desempenho em celulares
+- A geração das curvas continua determinística, mas os cálculos KDE da população são executados em lotes ociosos após a primeira exibição.
+- O trabalho de fundo pausa quando a página está oculta e retoma quando volta a ficar visível.
+- As tabelas acessíveis só montam suas linhas quando o usuário abre “Consultar os dados em tabela”; tabelas abertas são atualizadas somente quando os dados mudam.
+- A animação de pontos de Sample Entropy passou a ter duração finita. O cartão/ícone oferece feedback breve; o diagrama abre a simulação específica.
+- Atualizado o teste móvel para a geometria final de 430 unidades do mapa m × r.
+
+## Conteúdo do pacote
+
+- `index.html` — página pública.
+- `styles.css` — identidade visual, temas, acessibilidade visual e comportamento responsivo.
+- `blazarlab.js` — visualizações, cálculos demonstrativos e interações.
+- `assets/` — ícones e prévia para compartilhamento.
+- `tests/` — verificações estáticas, testes de fumaça, tela cheia, acessibilidade e responsividade.
+- `CHANGELOG.md`, `VERSION`, `LICENSE` — histórico, versão e licença.
+
+## Publicação no GitHub Pages
+
+1. Use o repositório separado do site público; não substitua a ferramenta interna.
+2. Extraia o ZIP e envie os arquivos para a raiz do repositório (`index.html` na raiz).
+3. Em **Settings → Pages**, escolha a branch principal e a pasta `/(root)`.
+4. Teste os temas claro e escuro, navegação por teclado, heatmaps, zoom, reset, tela cheia e exportação PNG em desktop e celular.
+
+## Testes locais
+
+Com Node.js instalado, execute na raiz do projeto:
+
+```sh
+node --check blazarlab.js
+node tests/site-integrity.cjs
+node tests/reference-layout-regression.cjs
+node tests/references-class-mobile-regression.cjs
+node tests/consistency-regression.cjs
+node tests/heatmap-mobile-regression.cjs
+node tests/source-band-mobile-matrix.cjs
+node tests/responsive-geometry.cjs
+node tests/mobile-zoom-regression.cjs
+node tests/theme-backgrounds-responsive.cjs
+node tests/performance-optimizations.cjs
+node tests/png-theme-export.cjs
+node tests/method-showcase.cjs
+node tests/method-animation-regression.cjs
+node tests/accessibility-responsive.cjs
+node tests/smoke-test.cjs
+node tests/fullscreen-regression.cjs
+VIEWPORT_WIDTH=320 node tests/smoke-test.cjs
+VIEWPORT_WIDTH=390 node tests/smoke-test.cjs
+VIEWPORT_WIDTH=430 node tests/smoke-test.cjs
+VIEWPORT_WIDTH=600 node tests/smoke-test.cjs
+VIEWPORT_WIDTH=768 node tests/smoke-test.cjs
+VIEWPORT_WIDTH=1024 node tests/smoke-test.cjs
+```
+
+Os testes automatizados verificam a estrutura, as funções científicas demonstrativas, interações e regressões conhecidas. Eles não substituem a inspeção visual em navegadores reais nem testes com leitores de tela; valide esses pontos em desktop e celular antes de declarar conformidade WCAG.
+## Escopo científico
+
+Os dados da galeria são sintéticos, reproduzíveis e identificados no site. Estatísticas resumidas nos cartões de resultados são apresentadas como resultados reportados nos estudos do grupo e não são recalculadas com os sinais sintéticos. Os coeficientes mostrados no painel comparativo descrevem associações, não causalidade; as três métricas não são equivalentes.
